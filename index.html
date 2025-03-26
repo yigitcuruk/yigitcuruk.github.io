@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agalarla Survival Bea</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
@@ -13,17 +14,10 @@
             margin: 0;
             padding: 0;
         }
-        header {
-            background: url('image.png') center/cover no-repeat;
-            height: 250px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        header, footer {
+            background-color: #1f1f1f;
             text-align: center;
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
+            padding: 15px;
         }
         nav ul {
             list-style-type: none;
@@ -57,12 +51,16 @@
             margin: 10px;
             border-radius: 10px;
         }
-        .highlight-box {
-            background-color: #FFD700;
-            color: #000;
-            padding: 10px;
+        button {
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
             border-radius: 5px;
-            display: inline-block;
+        }
+        button:hover {
+            background-color: #e68900;
         }
     </style>
 </head>
@@ -85,7 +83,7 @@
     
     <section id="duyurular">
         <h2>Duyurular</h2>
-        <p>Sunucumuz yenidir.</p>
+        <p>Burada sunucu ile ilgili en son duyurular yer alacaktır.</p>
     </section>
     
     <section id="magaza">
@@ -94,17 +92,17 @@
             <div class="rank-card">
                 <h3>VIP</h3>
                 <p>Özel avantajlar ve ayrıcalıklar.</p>
-                <p class="highlight-box">Discord çekilişi ile alınacaktır</p>
+                <p style="background-color: #FFD700; color: #000; padding: 10px; border-radius: 5px;">Discord çekilişi ile alınacaktır</p>
             </div>
             <div class="rank-card">
                 <h3>RVIP</h3>
                 <p>Daha fazla özellik ve yetkiler.</p>
-                <p class="highlight-box">Discord çekilişi ile alınacaktır</p>
+                <p style="background-color: #FFD700; color: #000; padding: 10px; border-radius: 5px;">Discord çekilişi ile alınacaktır</p>
             </div>
             <div class="rank-card">
                 <h3>RVIP+</h3>
                 <p>En iyi avantajlar ve premium deneyim!</p>
-                <p class="highlight-box">Discord çekilişi ile alınacaktır</p>
+                <p style="background-color: #FFD700; color: #000; padding: 10px; border-radius: 5px;">Discord çekilişi ile alınacaktır</p>
             </div>
         </div>
     </section>
@@ -118,6 +116,7 @@
         <h2>Discord</h2>
         <p>Discord sunucumuza katılmak için: <a href="https://discord.gg/pRcRjypj" target="_blank">Bağlantıya Tıklayın</a></p>
     </section>
+    </section>
     
     <section id="sunucu">
         <h2>Sunucu</h2>
@@ -129,8 +128,7 @@
             <li>KeremLo1545</li>
             <li>Kai2156</li>
         </ul>
-        <h3>Sunucu Açılma Tarihi:</h3>
-        <p>Hafta sonu ya da Tatillerde açılır.</p>
+    </section>
     </section>
     
     <section id="ip">
