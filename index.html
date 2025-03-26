@@ -3,50 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1.20.1 Düz Dünya - Creative Sunucu</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Agalarla Survival Bea</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background: url('https://i.imgur.com/xyz123.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #232323;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 10px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #333;
+            border-radius: 5px;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .rank-card {
+            background-color: #252525;
+            border: 1px solid #333;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #e68900;
         }
     </style>
 </head>
-<body class="bg-gray-900 text-white">
-    <header class="text-center p-6 bg-gray-800 bg-opacity-80">
-        <h1 class="text-4xl font-bold">1.20.1 Düz Dünya</h1>
-        <p class="text-lg">Creative Minecraft Sunucusu - Türk Premium Sunucu</p>
+<body>
+    <header>
+        <h1>Agalarla Survival Bea</h1>
+        <p>Sunucu IP: <strong>AgalarlaSurvivalBea.aternos.me</strong></p>
     </header>
-    <main class="max-w-4xl mx-auto p-6 bg-gray-800 bg-opacity-90 rounded-lg shadow-lg">
-        <section class="text-center my-6">
-            <h2 class="text-2xl font-semibold">Sunucu Bilgileri</h2>
-            <p class="mt-2">Bağlanmak için IP: <span class="font-mono bg-gray-700 px-2 py-1 rounded">duzdunya.feathermc.gg</span></p>
-            <p class="mt-2 text-yellow-300 font-semibold">Bu bir Türk Minecraft sunucusudur ve yalnızca Premium hesaplar ile giriş yapılabilir.</p>
-            <p class="mt-2 text-red-400 font-semibold">Not 2: Sadece Feather Client kullananlar girebilir.</p>
-        </section>
-        <section class="text-center my-6">
-            <h2 class="text-2xl font-semibold">Bağlantılar</h2>
-            <p class="mt-2">
-                Discord Sunucumuz: 
-                <a href="https://discord.gg/XJeE6wtwKU" class="text-blue-400 underline" target="_blank">https://discord.gg/XJeE6wtwKU</a>
-            </p>
-        </section>
-        <section class="text-center my-6">
-            <h2 class="text-2xl font-semibold">Anlık Oyuncu Sayısı</h2>
-            <p class="mt-2 text-lg font-mono bg-gray-700 px-2 py-1 rounded" id="player-count">Yükleniyor...</p>
-        </section>
-        <script>
-            async function getPlayerCount() {
-                // Sunucuya uygun bir API bağlantısı eklenebilir
-                document.getElementById("player-count").innerText = "Şu an çevrimdışı";
-            }
-            getPlayerCount();
-        </script>
-    </main>
-    <footer class="text-center mt-6 p-6 bg-gray-800 bg-opacity-80">
-        <img src="/mnt/data/image.png" alt="Sunucu Logosu" class="mx-auto w-32 h-32">
-        <p class="text-sm mt-2">Bu sunucuda Creative mod verilmektedir.</p>
-        <p class="text-sm mt-2">© 2025 1.20.1 Düz Dünya - Türk Premium Minecraft Sunucusu</p>
+    
+    <nav>
+        <ul>
+            <li><a href="#duyurular">Duyurular</a></li>
+            <li><a href="#magaza">Mağaza</a></li>
+            <li><a href="#bilgi">Bilgi</a></li>
+            <li><a href="#discord">Discord</a></li>
+            <li><a href="#sunucu">Sunucu</a></li>
+            <li><a href="#ip">IP</a></li>
+        </ul>
+    </nav>
+    
+    <section id="duyurular">
+        <h2>Duyurular</h2>
+        <p>Burada sunucu ile ilgili en son duyurular yer alacaktır.</p>
+    </section>
+    
+    <section id="magaza">
+        <h2>Mağaza</h2>
+        <div class="ranks">
+            <div class="rank-card">
+                <h3>VIP</h3>
+                <p>Özel avantajlar ve ayrıcalıklar.</p>
+                <p style="background-color: #FFD700; color: #000; padding: 10px; border-radius: 5px;">Discord çekilişi ile alınacaktır</p>
+            </div>
+            <div class="rank-card">
+                <h3>RVIP</h3>
+                <p>Daha fazla özellik ve yetkiler.</p>
+                <p style="background-color: #FFD700; color: #000; padding: 10px; border-radius: 5px;">Discord çekilişi ile alınacaktır</p>
+            </div>
+            <div class="rank-card">
+                <h3>RVIP+</h3>
+                <p>En iyi avantajlar ve premium deneyim!</p>
+                <p style="background-color: #FFD700; color: #000; padding: 10px; border-radius: 5px;">Discord çekilişi ile alınacaktır</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="bilgi">
+        <h2>Bilgi</h2>
+        <p>Bu bir Minecraft Survival Sunucusudur. Hile açarsanız yetkililer 2 dakikada banlar.</p>
+    </section>
+    
+    <section id="discord">
+        <h2>Discord</h2>
+        <p>Discord sunucumuza katılmak için: <a href="https://discord.gg/pRcRjypj" target="_blank">Bağlantıya Tıklayın</a></p>
+    </section>
+    </section>
+    
+    <section id="sunucu">
+        <h2>Sunucu</h2>
+        <p>Survival Sunucusu</p>
+        <h3>Kurucular:</h3>
+        <ul>
+            <li>YigitCuruk</li>
+            <li>BerkayLo1545</li>
+            <li>KeremLo1545</li>
+            <li>Kai2156</li>
+        </ul>
+    </section>
+    </section>
+    
+    <section id="ip">
+        <h2>IP</h2>
+        <p>Sunucuya katılmak için IP: <strong>AgalarlaSurvivalBea.aternos.me</strong></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Agalarla Survival Bea - Tüm Hakları Saklıdır.</p>
     </footer>
 </body>
 </html>
